@@ -115,9 +115,9 @@
            <li class="hide-on-small-only"><a  href="#Home">Home</a></li>
            <li><a  href="#CORPORATE">Corporate</a></li>
            <li><a  href="#Residential">Residential</a></li>
-           <li><a href="collapsible.html">About Me</a></li>
+           <li><a href="#about">About Me</a></li>
 
-           <li><a href="collapsible.html">My Porfilio</a></li>
+           <li><a href="">My Porfilio</a></li>
          </ul>
        </div>
      </nav>
@@ -273,7 +273,7 @@
 
 
 
-<div id="CORPORATE2" class="page">
+<div id="about" class="page">
 
 
 
@@ -429,8 +429,26 @@ $( window ).ready(function() {
   runtime();
 });
 
+function myFunction() {
+    myVar = setTimeout(runtime, 3000);
+}
+ myFunction();
 
 
+ $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
       </script>
     </body>

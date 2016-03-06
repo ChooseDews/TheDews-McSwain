@@ -123,7 +123,7 @@
      </nav>
 </div>
 
-              <img class="logo vertical" src="logo.png" alt="" />
+              <img class="logo vertical" id="logo" src="logo.png" alt="" />
         </div>
 
         <div id="CORPORATE" class="page">
@@ -385,8 +385,14 @@ $( window ).ready(function() {
   runtime();
 });
 
+
+$( "#logo" ).load(function() {
+runtime();
+
+});
+
 function myFunction() {
-    myVar = setTimeout(runtime, 3000);
+    myVar = setTimeout(runtime, 700);
 }
  myFunction();
 

@@ -1,0 +1,70 @@
+@keyframes pulse {
+    0% {
+        fill-opacity: 0;
+    }
+    100% {
+        fill-opacity: 1;
+    }
+}
+
+.finished svg path {
+    fill: white;
+    animation: pulse 2s;
+}
+
+.background {
+    background-image: url('/images/background.png');
+    text-align: center;
+}
+
+.logo {
+    max-width: 700px;
+    width: 90%;
+}
+
+.page {
+    overflow-y: hidden;
+    background-color: #9098A3;
+}
+
+svg {
+    max-width: 100%;
+}
+
+.skills li {
+    min-height: 60px !important;
+}
+
+h4 {
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+.collapsible-body {
+    background-color: white;
+}
+
+.skills li .title {
+    margin-top: 20px;
+}
+
+.padding {
+    padding-top: 50px !important;
+    padding-left: 50px !important;
+}
+
+.collapsible-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+nav li a {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
